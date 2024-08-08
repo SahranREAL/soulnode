@@ -1,0 +1,28 @@
+.offre-minecraft {
+    width: 360px;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offre-minecraft:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-minecraft img {
+    max-width: 100%;
+    height: auto;
+}
+
+.offre-minecraft p {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #333;
+}
