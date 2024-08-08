@@ -9,16 +9,16 @@ body {
 
 header {
     display: flex;
-    align-items: center; /* Centrer verticalement les éléments */
-    justify-content: space-between; /* Espacer les éléments */
-    background: linear-gradient(to right, #242424, #242424); /* Dégradé de couleur */
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #242424, #242424);
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour ajouter de la profondeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
     display: block;
-    width: 50px; /* Ajuster la taille du logo */
+    width: 50px;
     height: auto;
 }
 
@@ -30,9 +30,9 @@ header {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    margin: 0 20px; /* Augmenter l'espacement entre les liens */
-    font-size: 18px; /* Augmenter la taille de la police */
-    position: relative; /* Pour ajouter un effet de survol */
+    margin: 0 20px;
+    font-size: 18px;
+    position: relative;
 }
 
 .nav-links a::after {
@@ -44,11 +44,11 @@ header {
     position: absolute;
     bottom: -5px;
     left: 0;
-    transition: width 0.3s; /* Transition douce */
+    transition: width 0.3s;
 }
 
 .nav-links a:hover::after {
-    width: 100%; /* Effet de soulignement au survol */
+    width: 100%;
 }
 
 .btn-connexion {
@@ -58,13 +58,12 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s; /* Transition pour le survol */
+    transition: background-color 0.3s;
 }
 
 .btn-connexion:hover {
-    background-color: #e6b800; /* Changer la couleur de fond au survol */
+    background-color: #e6b800;
 }
-
 
 
 .hero {
