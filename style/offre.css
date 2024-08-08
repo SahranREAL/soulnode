@@ -1,28 +1,65 @@
-.offre-minecraft {
+.offre-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.offre {
+    display: block;
     width: 360px;
-    height: 200px;
+    height: 250px;
     background-color: #ffffff;
     padding: 20px;
-    margin: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     text-align: center;
     font-size: 20px;
+    text-decoration: none;
+    color: inherit;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.offre-minecraft:hover {
+.offre:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.img-minecraft img {
+.img-offre img {
     max-width: 100%;
     height: auto;
 }
 
-.offre-minecraft p {
+.offre p {
     font-size: 1.2em;
     margin-top: 15px;
     color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-links a, .btn-connexion {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }
