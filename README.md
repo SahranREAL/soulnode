@@ -1,2 +1,2 @@
 # sounode
-SoulNode website
+SoulNode website open source
