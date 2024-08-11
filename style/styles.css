@@ -72,13 +72,15 @@ body {
 
 footer {
     background-color: #222;
-    color: #ddd;
+    color: #ffffff;
     text-align: center;
     padding: 30px;
     border-top: 2px solid #ffcc00;
     font-size: 0.9em;
     line-height: 1.6;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed; bottom:0;
+    width: 100%;
 }
 
 footer p {
