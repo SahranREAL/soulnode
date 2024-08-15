@@ -3,79 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoulNode - home</title>
-    <link rel="icon" type="image/vnd.icon" href="img/logo.png">
+    <title>SoulNode - Home</title>
     <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet" href="style/loading.css">
-    <script src="script/loading.js"></script>
-
 </head>
 <body>
-
-
-    <div id="loadingScreen">
-        <div>
-            <div class="loading-icon">⏳</div>
-            <h1>We check that you're human.</h1>
-            <p>This operation may take a few seconds.</p>
-            <p>SoulNode should check the security of your connection before proceeding.</p>
-        </div>
-    </div>
-
-
     <header>
-        <img src="img/logo.png" width="35" height="40" alt="logo" class="logo">
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="offre.html">Offers</a>
-            <a href="#">Information (SOON)</a>
-            <a href="#">Comments (SOON)</a>
-        </div>
-        <a href="https://dash.soulnode.foxping.ovh/login" class="btn-connexion">Connexion</a>
+        <nav>
+            <div class="logo">SoulNode</div>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="offre.html">Offers</a></li>
+                <li><a href="about.html">Aboute</a></li>
+                <li><a href="https://discord.gg/r6Y3jYZk">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-
-
-
-
-    <section class="hero">
-        <h1>Your perfect game server</h1>
+    <section id="hero">
+        <h1>Welcome to SoulNode</h1>
         <p>High-performance servers, accessible 24/7, free of charge.</p>
-        <div class="cta-buttons">
-            <a href="https://dash.soulnode.foxping.ovh/register">Start Now</a>
-            <a href="https://panel.soulnode.foxping.ovh">Already a member?</a>
-        </div>
-    </section> 
-    
-    <section class="features">  
-        <div class="feature">
-            <img src="img/icon/perf.png" width="40" height="40" alt="Feature 1">
-            <h3>Maximum Performance</h3>
-            <p>High-performance servers for smooth, uninterrupted gaming.</p>
-        </div>
-        <div class="feature">
-            <img src="img/icon/uptime.png" width="40" height="40" alt="Feature 2">
-            <h3>Availability</h3>
-            <p>Our servers are available 99.25% of the time.</p>
-        </div>
-        <div class="feature">
-            <img src="img/icon/sercurité.png"  width="40" height="40" alt="Feature 3">
-            <h3>Advanced Security</h3>
-            <p>Your data and servers are protected by our state-of-the-art security systems.</p>
-        </div>
+        <a href="#features" class="cta">Discover Our Features</a>
     </section>
 
-
-<footer>
-    <p>&copy; 2024 SoulNode. All rights reserved.</p>
-    <div class="footer-links">
-        <a href="#">Terms of use</a> |
-        <a href="#">Privacy policy</a>
-    </div>
-
-    </div>
-</footer>
-
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <h3>Top performance</h3>
+                <p>Optimized servers for maximum performance, whatever your needs.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy installation</h3>
+                <p>Activate your server in just a few clicks and enjoy the power of our hosting!</p>
+            </div>
+            <div class="feature">
+                <h3>Enhanced safety</h3>
+                <p>We protect your data with advanced security measures.</p>
+            </div>
+            <div class="feature">
+                <h3>Support 24/7</h3>
+                <p>Our support team is always there to help you, at any time, every day.</p>
+            </div>
+        </div>
+    </section>
     
+
+
+    <footer>
+        <p>&copy; 2024 SoulNode. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
