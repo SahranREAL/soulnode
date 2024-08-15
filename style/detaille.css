@@ -1,3 +1,4 @@
+/* CSS amélioré pour la page d'offres Minecraft */
 
 body {
     font-family: 'Arial', sans-serif;
@@ -56,7 +57,7 @@ h2 {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin: 20px;
-    flex: 1 1 300px;
+    flex: 1 1 300px; /* Responsif pour les écrans plus petits */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
