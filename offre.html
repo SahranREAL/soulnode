@@ -3,60 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoulNode - offre</title>
-    <link rel="icon" type="image/vnd.icon" href="img/logo.png">
+    <title>SoulNode - Offers</title>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/offre.css">
+    <link rel="stylesheet" href="style/detaille.css">
 </head>
 <body>
-
     <header>
-        <img src="img/logo.png" width="35" height="40" alt="logo" class="logo">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="offre.html">Offers</a>
-            <a href="#">Information (SOON)</a>
-            <a href="#">Comments (SOON)</a>
-        </div>
-        <a href="https://dash.soulnode.foxping.ovh/login" class="btn-connexion">Connexion</a>
+        <nav>
+            <div class="logo">SoulNode</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#plans">Offers</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <h1>Visit our offers</h1>
+    <section id="plans">
+        <h2>Our offers</h2>
+        <div class="plan-container">
+            <div class="plan">
+                <a href="offres/minecraft.html">
+                    <h3>Minecraft offers</h3>
+                    <p>Discover our hosting plans for your Minecraft servers.</p>
+                </a>
+            </div>
+            <div class="plan">
+                <a href="offres-discord.html">
+                    <h3>Discord offers</h3>
+                    <p>Host your Discord bots with our tailored offers.</p>
+                </a>
+            </div>
+            <div class="plan">
+                <a href="offres-web.html">
+                    <h3>Web Offers</h3>
+                    <p>Hosting solutions for your websites.</p>
+                </a>
+            </div>
+        </div>
     </section>
-
-
-
-    <div class="offre-container">
-
-
-        <a href="offre/minecraft.html" class="offre">
-            <div class="img-offre">
-                <img src="img/icon/offre/minecraft.png" width="128" height="128" alt="Service-mc" />
-            </div>
-            <p>Minecraft</p>
-        </a>
-
-
-
-        <a href="offre/discord.html" class="offre">
-            <div class="img-offre">
-                <img src="img/icon/offre/discord.png" width="128" height="128" alt="Service-ds" />
-            </div>
-            <p>Bot Discord</p>
-        </a>
-
-
-        
-
-    </div>
 
     <footer>
         <p>&copy; 2024 SoulNode. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#">Terms of use</a> |
-            <a href="#">Privacy policy</a>
-        </div>
     </footer>
 </body>
 </html>
