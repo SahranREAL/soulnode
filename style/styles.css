@@ -1,188 +1,190 @@
+/* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+#hero {
+    height: 100vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.main.hero p {
-    font-size: 1.2em;
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-.cta-buttons {
-    margin-top: 30px;
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.cta-buttons a {
-    background-color: #ffcc00;
-    color: #1a1a1d;
-    padding: 15px 25px;
-    text-decoration: none;
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
     border-radius: 5px;
-    font-weight: bold;
-    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.cta-buttons a:hover {
-    background-color: #cda502;
+.cta:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-.features {
+#services {
+    padding: 50px;
+    background-color: #1c1c1c;
+    animation: slideIn 1s ease-in-out;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-container {
     display: flex;
     justify-content: space-around;
-    padding: 50px 0;
-    background-color: #fff;
-    text-align: center;
+    gap: 20px;
 }
 
-.feature {
-    flex: 1;
+.service {
+    background-color: #2b2b2b;
     padding: 20px;
-    margin: 0 10px;
-    background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.feature img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.service:hover {
+    transform: scale(1.05);
 }
 
-.feature h3 {
-    margin-top: 15px;
-    font-size: 1.5em;
-    color: #1a1a1d;
-}
-
-.feature p {
-    color: #333;
-    font-size: 1em;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+#about, #contact {
+    padding: 50px;
+    background-color: #1c1c1c;
 }
 
 footer {
-    background-color: #222;
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-top: 1px solid #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* CSS amélioré pour la section des fonctionnalités */
+
+#features {
+    padding: 50px;
+    background-color: #1c1c1c;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+    margin: auto;
+}
+
+#features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
     color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 15px;
     text-align: center;
-    padding: 30px;
-    border-top: 2px solid #ffcc00;
-    font-size: 0.9em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    flex-basis: 45%;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #cccccc;
     line-height: 1.6;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-    position: fixed; bottom:0;
-    width: 100%;
 }
 
-footer p {
-    margin: 0;
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
 }
-
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: normal;
-    transition: color 0.3s, text-decoration 0.3s;
-}
-
-footer a:hover {
-    text-decoration: underline;
-
-}
-
-.footer-links {
-    margin-top: 5px;
-}
-
-.footer-links a {
-    margin: 0 10px;
-}
-
-.footer-social a:hover {
-    color: #fff;
-}
--content {
-    flex: 1;
-}
-
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to right, #242424, #242424);
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.logo {
-    display: block;
-    width: 50px;
-    height: auto;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    position: relative;
-}
-
-.nav-links a::after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0;
-    background: #ffcc00;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-.btn-connexion {
-    background-color: #ffcc00;
-    color: #1a1a1d;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-connexion:hover {
-    background-color: #e6b800;
-}
-
-
-.hero {
-    background-color: #1e2022;
-    color: #ffcc00;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 3em;
-}
-
