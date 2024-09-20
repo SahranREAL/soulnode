@@ -1,4 +1,4 @@
-# sounode
+# soulnode
 SoulNode website open source
 
 
